@@ -18,7 +18,7 @@ h3 {
 }
 
 h2::after {
-    background-color: #fff;
+    background-color: black;
     content: "";
     display: block;
     margin: 20px auto 0 auto;
@@ -63,6 +63,8 @@ header p {
     margin-top: 40px;
     margin-right: 20px;
     list-style: none;
+    position: fixed; /* Set the navbar to fixed position */
+    right: 0; /* Position the navbar at the top of the page */
 }
 
 .main-nav li {
@@ -128,12 +130,16 @@ header p {
 
 .flex-grid-thirds {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
 .flex-grid-thirds .col {
     color: white;
     text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(12, 11, 11);
+    border-radius: 5px;
+    margin: 10px;
     width: 32%;
 }
 
@@ -151,6 +157,12 @@ header p {
     font-size: 200%;
     display: inline-block;
     margin-bottom: 20px;
+}
+
+/* ========================== PROJECTS ========================== */
+
+.projects {
+    background-color: wheat;
 }
 
 /* ========================== CONTACT ========================== */
@@ -174,20 +186,28 @@ header p {
 /* ========================== FOOTER ========================== */
 footer {
     background-color: black;
+    padding: 20px;
+    margin: 0;
+}
+
+footer p {
+    margin: 10px;
+    text-align: center;
 }
 
 footer p {
     color: white;
-    text-align: left;
+    text-align: center;
 }
 
 .social-links {
     list-style: none;
-    float: right;
+    text-align: center;
 }
 
 .social-links li {
     display: inline-block;
+    float: right;
     margin-left: 40px;
     margin-right: 20px;
 }
