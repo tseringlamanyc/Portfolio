@@ -5,7 +5,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Personal Website</title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -14,24 +13,76 @@
         <header>
             <nav>
                 <div>
-                    <img src="Img/my avatar.png" alt="avatar">
-                    <ul>
-                        <li>About</li>
-                        <li>Skills</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                    <img src="Img/myavatar.png" alt="avatar" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </nav>
 
-            <div>
-                <h2>Hi I'm Tsering</h2>
-                <p>
-                    I'm an iOS Developer. 
-                </p>
+            <div class="intro">
+                <h1>Hi I'm Tsering</h1>
+                <p>Im an iOS Developer</p>
             </div>
         </header>
+
+        <section class="skills">
+
+            <div class="row">
+                    <h2>Skills</h2>
+            </div>
+
+            <div class="flex-grid-thirds">
+                <div class="col">
+                    <ion-icon name="logo-apple" class="icon-big"></ion-icon>
+                    <h3>SWIFT</h3>
+                    <p>Over a year of experience with Swift, Swift UI and iOS.</p>
+                </div>
+                <div class="col">
+                    <ion-icon name="logo-html5" class="icon-big"></ion-icon>
+                    <h3>HTML</h3>
+                    <p>Currently learning</p>
+                </div>
+                <div class="col">
+                    <ion-icon name="logo-css3" class="icon-big"></ion-icon>
+                    <h3>CSS</h3>
+                    <p>Currently learning</p>
+                </div>
+              </div>
+        </section>
+
+        <section class="contact">
+            <div class="row">
+                <h2>Contact me</h2>
+            </div>
+
+            <div class="row">
+                    <form>
+
+                    </form>
+            </div>
+        </section>
+
+        <section class="footer">
+            <footer>
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                </ul>
+
+                <div class="row">
+                    <p>Copyright &copy; 2021. All rights reserved</p>
+                </div>
+            </footer>
+
+        </section>
         
     </body>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
 </html>

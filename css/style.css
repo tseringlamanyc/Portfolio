@@ -1,4 +1,206 @@
+/* ========================== BASIC SETUP  ========================== */
+
 * {
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+h1,
+h2,
+h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2::after {
+    background-color: #fff;
+    content: "";
+    display: block;
+    margin: 20px auto 0 auto;
+    height: 2px;
+    width: 100px;
+}
+
+p {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 40px 0;
+}
+
+
+/* ========================== RESUABLE  ========================== */
+
+.row {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+/* ========================== HEADER  ========================== */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url("/Img/background.jpeg");
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50vh;
+}
+
+header p {
+    color: white;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    border-bottom: 2px solid transparent;
+    color: #fff;
+    font-size: 80%;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #fff;
+}
+
+.logo {
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: auto;
+}
+
+.intro {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 1140px;
+}
+
+/* ========================== SKILLS ========================== */
+
+.skills {
+    background-color: rgb(233, 230, 230);
+}
+
+.skills h1, h2, h3, p {
+    color: black;
+}
+
+.skills h2::after {
+    background-color: black;
+    content: "";
+    display: block;
+    margin: 20px auto 0 auto;
+    height: 2px;
+    width: 100px;
+}
+
+.col {
+    padding: 20px;
+}
+
+.flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.flex-grid-thirds .col {
+    color: white;
+    text-align: center;
+    width: 32%;
+}
+
+.flex-grid-thirds .h3 {
+    text-align: center;
+}
+
+.skills-logo {
+    height: auto;
+    width: 100%;
+}
+.icon-big {
+    color: #050505;
+    text-align: center;
+    font-size: 200%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* ========================== CONTACT ========================== */
+.contact {
+    background-color: rgb(99, 74, 74);
+}
+
+.form {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.flex-grid-twos {
+    display: flex;
+  }
+
+.flex-grid-twos .col {
+    flex: 2;
+}
+
+/* ========================== FOOTER ========================== */
+footer {
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    text-align: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.social-links li a:link, 
+.social-links li a:visited {
+    color: white;
+    border: 0;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    border-bottom: 2px solid #fff;
 }
