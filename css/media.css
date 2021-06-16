@@ -1,0 +1,71 @@
+@media only screen and (max-width: 480px) {
+    section {
+        padding: 25px 0;
+    }
+
+    .skills p {
+        font-size: 80%;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 80%;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .flex-grid-thirds {
+        display: grid;
+        width: 100%;
+        padding: 0;
+    }
+
+    .intro {
+        padding: 0 4%;
+        left: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .main-nav {
+        display: none;
+    }
+
+    .row {
+        padding: 0 4%;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    .flex-grid-thirds .col {
+        flex-wrap: wrap;
+        margin: 5 5 4% 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+}
+
+/* Big tablets to 1200px (width smaller than 1140px of our row) */
+@media only screen and (max-width: 1200px) {
+    .row {
+        padding: 0 2%;
+    }
+}
