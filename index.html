@@ -1,113 +1,132 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Personal Website</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
 
-    <body>
-        <header>
-            <nav>
-                <div>
-                    <img src="Img/myavatar.png" alt="avatar" class="logo">
-                    <ul class="main-nav">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+</head>
 
-            <div class="intro">
-                <h1>Hi I'm Tsering</h1>
-                <p>Im an iOS Developer</p>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="Img/myavatar.png" alt="avatar" class="logo">
+                <ul class="main-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </header>
+        </nav>
 
-        <section class="skills" id="skills">
+        <div class="intro">
+            <h1>Hi I'm Tsering</h1>
+            <p>Im an iOS Developer</p>
+        </div>
+    </header>
 
+    <section class="skills" id="skills">
+
+        <div class="row">
+            <h2>Skills</h2>
+        </div>
+
+        <div class="flex-grid-thirds">
+            <div class="col">
+                <ion-icon name="logo-apple" class="icon-big"></ion-icon>
+                <h3>SWIFT</h3>
+                <p>Over a year of experience with Swift, Swift UI and iOS.</p>
+            </div>
+            <div class="col">
+                <ion-icon name="logo-html5" class="icon-big"></ion-icon>
+                <h3>HTML</h3>
+                <p>Currently learning</p>
+            </div>
+            <div class="col">
+                <ion-icon name="logo-css3" class="icon-big"></ion-icon>
+                <h3>CSS</h3>
+                <p>Currently learning</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+
+        <div class="row">
+            <h2>Projects</h2>
+        </div>
+
+        <div class="flex-grid-thirds">
+            <div class="col">
+                <h3>Coming soon</h3>
+                <p>----------------</p>
+            </div>
+            <div class="col">
+                <h3>Coming soon</h3>
+                <p>----------------</p>
+            </div>
+            <div class="col">
+                <h3>Coming soon</h3>
+                <p>----------------</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="row">
+            <h2>Contact me</h2>
+        </div>
+
+        <section class="form">
             <div class="row">
-                    <h2>Skills</h2>
-            </div>
-
-            <div class="flex-grid-thirds">
-                <div class="col">
-                    <ion-icon name="logo-apple" class="icon-big"></ion-icon>
-                    <h3>SWIFT</h3>
-                    <p>Over a year of experience with Swift, Swift UI and iOS.</p>
-                </div>
-                <div class="col">
-                    <ion-icon name="logo-html5" class="icon-big"></ion-icon>
-                    <h3>HTML</h3>
-                    <p>Currently learning</p>
-                </div>
-                <div class="col">
-                    <ion-icon name="logo-css3" class="icon-big"></ion-icon>
-                    <h3>CSS</h3>
-                    <p>Currently learning</p>
-                </div>
-              </div>
-        </section>
-
-        <section class="projects" id="projects">
-
-            <div class="row">
-                    <h2>Projects</h2>
-            </div>
-
-            <div class="flex-grid-thirds">
-                <div class="col">
-                    <h3>Coming soon</h3>
-                    <p>----------------</p>
-                </div>
-                <div class="col">
-                    <h3>Coming soon</h3>
-                    <p>----------------</p>
-                </div>
-                <div class="col">
-                    <h3>Coming soon</h3>
-                    <p>----------------</p>
-                </div>
-              </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <div class="row">
-                <h2>Contact me</h2>
-            </div>
-
-            <div class="row">
-                    <form>
-
-                    </form>
-            </div>
-        </section>
-
-            <footer>
-                <div class="flex-grid-thirds">
-                    <ul class="social-links">
-                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-                    </ul>
-
-                    <div>
-                        <p>Tsering Lama &copy; 2021</p>
+                <form>
+                    <div class="col">
+                        <input type="text" placeholder="Enter your name">
                     </div>
+                    <div class="col">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="col">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </section>
 
-                    <div >
-                        <p>tseringglamaa@gmail.com</p>
-                    </div>   
-                </div>
-            </footer>
-        
-    </body>
+    <footer>
+        <div class="flex-grid-thirds">
+            <ul class="social-links">
+                <li><a href="https://twitter.com/tsenykk" target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                <li><a href="https://www.linkedin.com/in/tsering-lama-nyc/" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                <li><a href="https://github.com/tseringlamanyc" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a></li>
+            </ul>
 
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+            <div>
+                <p>Tsering Lama &copy; 2021</p>
+            </div>
+
+            <div>
+                <p>tseringglamaa@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
 </html>
