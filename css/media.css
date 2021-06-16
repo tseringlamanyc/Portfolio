@@ -46,7 +46,8 @@
     }
 
     .flex-grid-thirds .col {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin: 5 5 4% 0;
         width: 100%;
     }

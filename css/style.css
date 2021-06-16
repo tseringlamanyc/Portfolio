@@ -2,7 +2,8 @@
 
 * {
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -81,6 +82,8 @@ section {
 /* ========================== HEADER  ========================== */
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.699)), to(rgba(0, 0, 0, 0.699))), url("/Img/background.jpeg");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url("/Img/background.jpeg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url("/Img/background.jpeg");
     background-size:cover;
     background-position: center;
@@ -112,6 +115,8 @@ header p {
     padding: 8px 0;
     text-decoration: none;
     text-transform: uppercase;
+    -webkit-transition: border-bottom 0.5s;
+    -o-transition: border-bottom 0.5s;
     transition: border-bottom 0.5s;
 }
 
@@ -132,7 +137,9 @@ header p {
     position: absolute;
     top: 25%;
     left: 30%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     margin: 0 auto;
     width: 1140px;
 }
@@ -169,15 +176,20 @@ header p {
 }
 
 .flex-grid-thirds {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 
 .flex-grid-thirds .col {
     color: rgb(187, 184, 184);
     text-align: center;
     background-color: rgb(238, 235, 235);
-    box-shadow: 0 2px 2px rgba(12, 11, 11, 0.178);
+    -webkit-box-shadow: 0 2px 2px rgba(12, 11, 11, 0.178);
+            box-shadow: 0 2px 2px rgba(12, 11, 11, 0.178);
     border-radius: 5px;
     margin: 10px;
     width: 32%;
@@ -240,6 +252,8 @@ input[type=submit] {
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
+    -webkit-transition: background-color 0.5s, border 0.5s, color 0.5s;
+    -o-transition: background-color 0.5s, border 0.5s, color 0.5s;
     transition: background-color 0.5s, border 0.5s, color 0.5s;
 }
 
